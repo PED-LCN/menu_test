@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   imageUrl: string;
   categoryId: string;
+  ingredients?: string[];
 }
 
 export interface Category {
@@ -28,6 +29,7 @@ export const products: Product[] = [
     price: 14.90,
     imageUrl: 'https://picsum.photos/seed/bolocenoura/400/400',
     categoryId: 'destaques',
+    ingredients: ['Cenoura fresca', 'Farinha de trigo', 'Ovos', 'Açúcar', 'Chocolate 50% cacau', 'Leite condensado', 'Manteiga'],
   },
   {
     id: 'p5',
@@ -36,6 +38,7 @@ export const products: Product[] = [
     price: 18.50,
     imageUrl: 'https://picsum.photos/seed/banoffee/400/400',
     categoryId: 'destaques',
+    ingredients: ['Biscoito maizena', 'Manteiga', 'Doce de leite artesanal', 'Banana nanica', 'Nata fresca', 'Canela em pó'],
   },
   {
     id: 'p2',
@@ -44,6 +47,7 @@ export const products: Product[] = [
     price: 16.90,
     imageUrl: 'https://picsum.photos/seed/redvelvet/400/400',
     categoryId: 'bolos',
+    ingredients: ['Massa amanteigada com cacau', 'Corante natural', 'Cream cheese', 'Açúcar de confeiteiro', 'Fava de baunilha'],
   },
   {
     id: 'p9',
@@ -52,6 +56,7 @@ export const products: Product[] = [
     price: 17.50,
     imageUrl: 'https://picsum.photos/seed/ninhonutella/400/400',
     categoryId: 'bolos',
+    ingredients: ['Massa de baunilha', 'Leite Ninho', 'Creme de leite', 'Leite condensado', 'Nutella original'],
   },
   {
     id: 'p3',
@@ -60,6 +65,7 @@ export const products: Product[] = [
     price: 3.50,
     imageUrl: 'https://picsum.photos/seed/brigadeiro/400/400',
     categoryId: 'docinhos',
+    ingredients: ['Leite condensado', 'Chocolate belga ao leite', 'Manteiga extra', 'Granulado de chocolate puro'],
   },
   {
     id: 'p4',
@@ -68,6 +74,7 @@ export const products: Product[] = [
     price: 3.50,
     imageUrl: 'https://picsum.photos/seed/beijinho/400/400',
     categoryId: 'docinhos',
+    ingredients: ['Leite condensado', 'Coco ralado seco', 'Manteiga', 'Coco ralado fresco para cobertura'],
   },
   {
     id: 'p10',
@@ -76,6 +83,7 @@ export const products: Product[] = [
     price: 4.00,
     imageUrl: 'https://picsum.photos/seed/surpresauva/400/400',
     categoryId: 'docinhos',
+    ingredients: ['Uva Thompson', 'Leite condensado', 'Leite em pó', 'Manteiga'],
   },
   {
     id: 'p6',
@@ -84,6 +92,7 @@ export const products: Product[] = [
     price: 22.00,
     imageUrl: 'https://picsum.photos/seed/cheesecake/400/400',
     categoryId: 'sobremesas',
+    ingredients: ['Cream cheese', 'Ovos', 'Açúcar', 'Biscoito', 'Manteiga', 'Morango', 'Amora', 'Framboesa'],
   },
   {
     id: 'p11',
@@ -92,6 +101,7 @@ export const products: Product[] = [
     price: 24.00,
     imageUrl: 'https://picsum.photos/seed/tiramisu/400/400',
     categoryId: 'sobremesas',
+    ingredients: ['Queijo Mascarpone', 'Gemas de ovos', 'Açúcar', 'Biscoito Champagne', 'Café forte', 'Cacau em pó'],
   },
   {
     id: 'p7',
@@ -100,6 +110,7 @@ export const products: Product[] = [
     price: 6.00,
     imageUrl: 'https://picsum.photos/seed/cafe/400/400',
     categoryId: 'bebidas',
+    ingredients: ['Grãos de café 100% Arábica', 'Água filtrada'],
   },
   {
     id: 'p8',
@@ -108,6 +119,7 @@ export const products: Product[] = [
     price: 9.00,
     imageUrl: 'https://picsum.photos/seed/suco/400/400',
     categoryId: 'bebidas',
+    ingredients: ['Laranjas frescas selecionadas'],
   },
   {
     id: 'p12',
@@ -116,5 +128,6 @@ export const products: Product[] = [
     price: 4.50,
     imageUrl: 'https://picsum.photos/seed/aguagas/400/400',
     categoryId: 'bebidas',
+    ingredients: ['Água mineral natural', 'Gás carbônico'],
   }
 ];
