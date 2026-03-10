@@ -6,6 +6,7 @@ import { defineConfig, loadEnv } from "vite";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, ".", "");
   return {
+    base: "./" 
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -15,6 +16,5 @@ export default defineConfig(({ mode }) => {
     server: {
       hmr: process.env.DISABLE_HMR !== "true",
     },
-    base: "./" 
   };
 });
